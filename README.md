@@ -1,4 +1,11 @@
-# aMAZEme
+<h1 align="center">
+  aMAZEme
+</h1>
+<p align="center">
+  Maze generation tool that will amaze you!
+</p>
+
+![demo](/assets/demo.png)
 
 `amazeme` is a terminal-based maze generator and viewer implemented in Python using the `curses` library. This tool allows users to visualize mazes directly in the terminal, customize the appearance with various options, and even provide their own maze generation algorithms.
 
@@ -12,10 +19,18 @@
 
 ## Installation
 
-To install `amazeme`, you need to have Python 3 and `pip` installed. You can then install `Amazeme` using the following command:
+To install `amazeme`, you need to have Python 3 and `pip` installed. 
+
+You can then install `amazeme` via **pip** using the following command:
 
 ```bash
 pip install amazeme
+```
+
+You can also install it via **pipx**:
+
+```bash
+pipx install amazeme
 ```
 
 ## Usage
@@ -51,6 +66,9 @@ amazeme
 - `--live`:
   Enable live updates of the maze display. The maze will continuously refresh.
 
+- `--rate`:
+  Framerate to refresh maze. Works only with `--live`.
+  
 - `--source`:
   Provide the path to a `.py` file containing a custom `generate_maze(width, height)` function. This allows you to use your own maze generation algorithm.
 
@@ -88,7 +106,7 @@ Example of a custom maze generation file (`custom_maze.py`):
 
 ```python
 def generate_maze(width, height):
-    # My incredible maze generation function
+    """ My incredible maze generation function """
     return [[1 if (x + y) % 2 == 0 else 0 for x in range(width)] for y in range(height)]
 ```
 
