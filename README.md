@@ -2,6 +2,17 @@
   aMAZEme
 </h1>
 <p align="center">
+  <a href="https://github.com/zabojeb/amazeme/actions?query=workflow:%22Upload+Python+Package%22">
+    <img alt="Upload Python Package" src="https://github.com/zabojeb/amazeme/workflows/Upload%20Python%20Package/badge.svg" />
+  </a>
+  <a href="https://github.com/zabojeb/amazeme/releases/">
+    <img alt="GitHub tag" src="https://img.shields.io/github/tag/zabojeb/amazeme?include_prereleases=&sort=semver&color=blue" />
+  </a>
+  <a href="#license">
+    <img alt="License" src="https://img.shields.io/badge/License-MIT-blue" />
+  </a>
+</p>
+<p align="center">
   Maze generation tool that will amaze you!
 </p>
 
