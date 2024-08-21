@@ -68,10 +68,10 @@ amazeme
   amazeme --wall "###" --space "." --solid-mode
   ```
 
-- Enable live updates and shuffle characters:
+- Enable live updates and shuffle 123 characters:
 
   ```bash
-  amazeme --live --shuffle
+  amazeme --live --shuffle --wall "123"
   ```
 
 - Use a custom maze generation algorithm from `custom_maze.py`:
